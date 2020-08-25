@@ -6,6 +6,7 @@ public class DragAndDrop : MonoBehaviour
 {
     bool moveAllowed;
     public Collider2D col;
+    public GameObject[] circles;
 
     // Start is called before the first frame update
     void Start()

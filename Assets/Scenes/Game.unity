@@ -182,6 +182,7 @@ MonoBehaviour:
   minSpeed: 0
   secondsToMaxDifficulty: 0
   restartPanel: {fileID: 301283270}
+  circles: []
 --- !u!114 &301283273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +912,7 @@ MonoBehaviour:
   minSpeed: 0
   secondsToMaxDifficulty: 0
   restartPanel: {fileID: 904264914}
+  circles: []
 --- !u!1 &935940409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1643,7 @@ MonoBehaviour:
   timeLeft: 15
   timeText: {fileID: 1624727769}
   restartPanel: {fileID: 904264914}
+  circles: []
 --- !u!114 &2019409596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,6 +1657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryPanel: {fileID: 301283270}
+  circles: []
 --- !u!58 &2019409597
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1908,12 +1912,12 @@ PrefabInstance:
     - target: {fileID: 2718058144086862944, guid: 781a92753dc082d44b634e02f04a42dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.11
+      value: 6.04
       objectReference: {fileID: 0}
     - target: {fileID: 2718058144086862944, guid: 781a92753dc082d44b634e02f04a42dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.31
+      value: 2.83
       objectReference: {fileID: 0}
     - target: {fileID: 2718058144086862944, guid: 781a92753dc082d44b634e02f04a42dc,
         type: 3}

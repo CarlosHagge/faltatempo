@@ -18,6 +18,7 @@ public class RandomPatrol : MonoBehaviour
     Vector2 targetPosition;
 
     public GameObject restartPanel;
+    public GameObject[] circles;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,11 @@ public class RandomPatrol : MonoBehaviour
         if (collision.tag == "PatrolCircle")
         {
             restartPanel.SetActive(true);
-            speed = 0;
+            circles = GameObject.FindGameObjectsWithTag("MainCircle");
+            foreach (GameObject circle in circles)
+            {
+                Destroy(circle);
+            }
         }
     }
 

@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public double timeLeft = 15;
     public Text timeText;
     public GameObject restartPanel;
+    public GameObject[] circles;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,11 @@ public class Timer : MonoBehaviour
         if ( timeLeft <= 0 )
         {
             restartPanel.SetActive(true);
+            circles = GameObject.FindGameObjectsWithTag("MainCircle");
+            foreach (GameObject circle in circles)
+            {
+                Destroy(circle);
+            }
         }
         timeText.text = string.Concat("Tempo restante: ", System.String.Format("{0:0}s", timeLeft));
     }
